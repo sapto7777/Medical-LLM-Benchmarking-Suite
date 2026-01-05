@@ -1,21 +1,25 @@
-# Medical-LLM-Benchmarking-Suite
-An open-source framework for clinical safety and LLM evaluation
-
 # Medical-LLM Benchmarking Suite (MLBS) 🩺
 
-**The Industry Standard for Clinical Safety Evaluation.**
+**The Open-Source Framework for Clinical Safety & Anthropic Claude Alignment.**
 
-Based on the peer-reviewed research:  
-> *Banerjee, S. (2025). Transforming Healthcare with State-of-The-Art Medical-LLMs: A Comprehensive Evaluation.* [cite: 173]
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🔬 Overview
-General benchmarks fail to capture **clinical safety**. MLBS provides a specialized testing harness to identify **medical hallucinations** in dosage and diagnosis.
+General-purpose benchmarks fail to evaluate **clinical risk**. **MLBS** provides a production-grade testing harness specifically designed for **Anthropic Claude**, implementing a modular architecture for:
+- **Clinical Alignment Scoring (CAS):** Identifying medical hallucinations in high-stakes scenarios.
+- **Safety Violation Detection:** Automated flagging of "contraindication" mismatches.
+- **Reproducible Evaluation:** Zero-temperature settings for scientific consistency.
 
-## 🚀 Key Features
-- **Hallucination Scorer:** Detects "confabulations" in clinical reasoning.
-- **Privacy-First Benchmarking:** Optimized for local SLM (Small Language Model) deployments.
-- **NIST AI RMF Alignment:** Designed for healthcare AI safety compliance.
+This framework is based on the methodology established in:
+> *Banerjee, S. (2025). Transforming Healthcare with State-of-The-Art Medical-LLMs.*
 
-## 📜 Citation
-If you use this suite, please cite:  
-[cite_start]`Banerjee, S. "Transforming Healthcare with State-of-The-Art Medical-LLMs," CMC Journal, 2025.` [cite: 173]
+## 🚀 Why MLBS?
+Unlike black-box evaluators, **MLBS** is designed for **Sovereign AI** contexts where transparency and regulatory compliance (NIST AI RMF) are paramount. 
+
+## 🛠️ Getting Started
+```bash
+# Set your API Key
+export ANTHROPIC_API_KEY='your-key-here'
+
+# Run the benchmark
+python main.py
