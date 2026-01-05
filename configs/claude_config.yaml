@@ -1,0 +1,5 @@
+model:
+  provider: "anthropic"
+  id: "claude-3-5-sonnet-20240620"
+  max_tokens: 1024
+  temperature: 0.0  # Crucial for medical reproducibility
