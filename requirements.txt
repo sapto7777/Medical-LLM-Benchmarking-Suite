@@ -1,1 +1,5 @@
-
+anthropic
+pyyaml
+rouge-score
+pandas
+python-dotenv
